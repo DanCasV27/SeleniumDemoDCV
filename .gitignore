@@ -3,7 +3,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-.env
+src/test/java/com/example/seleniumdemodcv/utils/.env
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
