@@ -12,4 +12,6 @@ public class MainPage {
     public SelenideElement toolsMenu = $x("//div[@data-test='main-menu-item' and @data-test-marker = 'Developer Tools']");
     public SelenideElement searchButton = $("[data-test='site-header-search-action']");
 
+
+
 }

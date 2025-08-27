@@ -1,0 +1,3 @@
+username,password,caseName
+invalid@example.com,CorrectaPeroUsuarioNoExiste,"usuario inexistente"
+";DROP TABLE users;--",valid,"payload SQLi en usuario"

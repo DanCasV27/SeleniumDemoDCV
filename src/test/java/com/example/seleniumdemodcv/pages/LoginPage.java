@@ -7,10 +7,31 @@ import org.openqa.selenium.support.FindBy;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
-    public SelenideElement loginemailInput = $("[data-qa='login-email']");
-    public SelenideElement loginPasswordInput= $("[data-qa='login-password']");
-    public SelenideElement loginButton = $("[data-qa='login-button']");
-    public SelenideElement signUpEmailInput = $("[data-qa='signup-email']");
-    public SelenideElement signUpNameInput = $("[data-qa='signup-name']");
-    public SelenideElement signUpButton = $("[data-qa='signup-button']");
+    private SelenideElement loginemailInput = $("[data-qa='login-email']");
+    private SelenideElement loginPasswordInput= $("[data-qa='login-password']");
+    private SelenideElement loginButton = $("[data-qa='login-button']");
+    private SelenideElement signUpEmailInput = $("[data-qa='signup-email']");
+    private SelenideElement signUpNameInput = $("[data-qa='signup-name']");
+    private SelenideElement signUpButton = $("[data-qa='signup-button']");
+
+
+    public void fillLoginEmailValidCredential(){
+        loginemailInput.setValue("email");
+    }
+    public void fillLoginPasswordValidCredential(){
+        loginPasswordInput.setValue("");
+    }
+    public void fillSignUpEmailValidCredential(){
+        signUpEmailInput.setValue("email");
+    }
+    public void fillSignUpNameValidCredential(){
+        signUpNameInput.setValue("");
+    }
+    public void clickLoginButton(){
+        loginButton.click();
+    }
+
+
+
+
 }
