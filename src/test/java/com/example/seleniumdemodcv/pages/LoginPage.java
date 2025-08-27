@@ -14,12 +14,10 @@ public class LoginPage {
     private SelenideElement signUpNameInput = $("[data-qa='signup-name']");
     private SelenideElement signUpButton = $("[data-qa='signup-button']");
 
-
-    public void fillLoginEmailValidCredential(){
-        loginemailInput.setValue("email");
-    }
-    public void fillLoginPasswordValidCredential(){
-        loginPasswordInput.setValue("");
+    public void fillLoginWithValidCredentiasl(String email,String password){
+        loginemailInput.setValue(email);
+        loginPasswordInput.setValue(password);
+        loginButton.click();
     }
     public void fillSignUpEmailValidCredential(){
         signUpEmailInput.setValue("email");
